@@ -69,7 +69,7 @@ describe('Trie', () => {
       trie.insert('doggoneprefixtries');
       trie.insert('piazza');
       trie.insert('tomato');
-      
+
       let suggestions = trie.suggest('do');
       expect(suggestions.some(current => current === 'doggo')).to.be.true
       expect(suggestions.some(current => current === 'dog')).to.be.true

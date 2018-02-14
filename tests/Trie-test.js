@@ -88,7 +88,14 @@ describe('Trie', () => {
   })
 
   describe('populate', () => {
-     it('it should be able to take in lots of words', () => {
+    it('should take in an array of words', () => {
+      let wordArray = ['aloha', 'burrito', 'chupacabra'];
+      expect(trie.count).to.eq(0);
+      trie.populate(wordArray);
+      expect(trie.count).to.eq(3)
+    })
+
+    it('it should be able to take in an array of lots of words', () => {
       expect(trie.count).to.eq(0);
       trie.populate(dictionary);
       expect(trie.count).to.eq(235886);

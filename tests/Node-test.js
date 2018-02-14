@@ -1,34 +1,28 @@
 import { expect } from 'chai';
 import Node from '../lib/Node'
 
-describe.skip('NODE', () => {
+describe('NODE', () => {
   let node;
 
   beforeEach(() => {
-    node = new Node('pizza')
+    node = new Node()
   })
 
   it('should be a thing', () => {
     expect(node).to.exist
   })
 
-  it('should default next to null', () => {
-    expect(node.next).to.equal(null);
+  it('should default complete word to false', () => {
+    expect(node.completeWord).to.equal(false);
   })
 
-  it('should take data and assign it to data prop', () => {
-    expect(node.data).to.equal('pizza')
+  it('should have a default popularity of 0', () => {
+    expect(node.popularity).to.eq(0)
+  })
+
+  it('should be able to keep track of children nodes in an object', () => {
+    expect(node.children).to.eql({})
   })
 
 })
   
-
-   // it('should keep track of the words that have been inserted', () => {
-   //    expect(trie.wordArray).to.deep.eq([]);
-
-   //    trie.insert('dog');
-   //    trie.insert('cat');
-   //    trie.insert('bird');
-
-   //    expect(trie.wordArray).to.deep.eq(['dog', 'cat', 'bird '])
-   //  })

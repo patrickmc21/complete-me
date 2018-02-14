@@ -1,5 +1,5 @@
 {
-  "name": "TDD",
+  "name": "@patrickmc21/prefix-trie",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",

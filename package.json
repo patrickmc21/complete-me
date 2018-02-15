@@ -2,7 +2,7 @@
   "name": "@patrickmc21/prefix-trie",
   "version": "1.1.5",
   "description": "",
-  "main": "Trie.js",
+  "main": "index.js",
   "directories": {
     "test": "tests"
   },

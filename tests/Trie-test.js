@@ -121,7 +121,6 @@ describe('Trie', () => {
       trie.insert('doggoneprefixtries');
       trie.insert('piazza');
       trie.insert('tomato');
-
       let suggestions = trie.suggest('ze');
       expect(suggestions.length).to.eq(0);
     })
